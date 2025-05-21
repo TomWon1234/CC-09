@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+:root {
+    --font-family-glass-antiqua: 'Glass Antiqua', sans-serif;
+    --font-family-cabin: 'Cabin', sans-serif;
+    --text-black: rgba(0, 0, 0, 1);
+    --text-white: rgba(255, 255, 255, 1);
+}
+
+.text-black {
+    color: var(--text-black);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inventory-default-wrapper body, html {
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-family-glass-antiqua);
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.inventory-default-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main content styling */
+.inventory-default-wrapper .main-content {
+    margin-left: 200px; /* Same as side-nav width */
+    padding: 20px;
+}
+
+.inventory-default-wrapper .main-content h1 {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+.inventory-default-wrapper .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inventory-default-wrapper .search-bar {
+    display: flex;
+    align-items: left;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 8px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    margin-left: -60px;
+    flex: 1;
+}
+
+.inventory-default-wrapper .input-wrapper {
+    flex: 1;
+}
+
+.inventory-default-wrapper .input-wrapper input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    outline: none;
+}
+
+.inventory-default-wrapper .search-button {
+    padding: 8px;
+    border: none;
+    background-color: #FD97FF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.inventory-default-wrapper .search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional: Hover effect for the search button */
+.inventory-default-wrapper .search-button:hover {
+    background-color: #e07cff;
+}
+
+.inventory-default-wrapper .filter {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.inventory-default-wrapper .filter label {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.inventory-default-wrapper .filter select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid black;
+    font-size: 1em;
+}
+
+.inventory-default-wrapper .item-grid {
+    display: grid;
+    margin-left: 150px;
+    margin-right: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.inventory-default-wrapper .inventory-item {
+    display: flex;
+    align-items: center;
+    overflow: ellipsis;
+    text-align: left;
+    padding: 10px;
+}
+
+.inventory-default-wrapper .inventory-item:hover {
+    background: #e07cff;
+}
+
+.inventory-default-wrapper .inventory-item img {
+    width: 30%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inventory-default-wrapper .item-text {
+    padding: 10px 15px;
+}
+
+.inventory-default-wrapper .inventory-item h2 {
+    margin: 10px 0 5px;
+    color: #000000;
+    text-decoration-line: none;
+}
+
+.inventory-default-wrapper .inventory-item p {
+    font-size: 18px;
+    color: #000000;
+    margin: 0 10px 10px;
+    text-decoration-line: none;
+}
+
+.inventory-default-wrapper .inventory-item {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  /*item*/
+
+  .text-black {
+    color: var(--text-black);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-family-glass-antiqua);
+    background-color: #ffffff;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.inventory-item-view .main-content {
+    padding: 20px;
+}
+
+.inventory-item-view .main-content h1 {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+.inventory-item-view .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inventory-item-view .image {
+    flex: 1 1 40%;
+}
+
+.inventory-item-view .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+.inventory-item-view .item-details {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inventory-item-view .important-details {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.inventory-item-view .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: black;
+}
+
+.inventory-item-view .label {
+    flex: 0 0 150px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.inventory-item-view .info-box {
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.inventory-item-view .description h2 {
+    font-size: 2.5em;
+}
+
+.inventory-item-view .description p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.inventory-item-view .edits {
+    position: fixed;
+    bottom: 20px;
+    left: 145px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.inventory-item-view .right {
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.inventory-item-view .edits button,
+.inventory-item-view a.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FD97FF;
+    color: #000000;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    height: 40px;
+    min-width: 100px;
+}
+
+.inventory-item-view .edits button a.nav-btn {
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+
+.inventory-item-view .edits button:hover,
+.inventory-item-view a.nav-btn:hover {
+    background-color: #e07cff;
+}
+
+.inventory-item-view .right button.static + button.static {
+    margin-left: 100px;
+}
+
+.inventory-item-view .edits .btn {
+    margin-right: 8px;
+    width: 20px;
+    height: auto;
+}
