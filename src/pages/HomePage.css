@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+body {
+    font-family: 'Glass Antiqua';
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+.home-page-content body {
+    font-size: 28px;
+}
+  
+  .home-default-wrapper body {
+    font-family: 'Glass Antiqua';
+    font-size: 28px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 2rem ;
+    text-align: center;
+  }
+  
+  .home-default-wrapper {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .home-default-wrapper .header {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .home-default-wrapper .header-text {
+    font-family: 'Beiruti';
+  }
+  
+  .home-default-wrapper .subheading {
+    font-size: 40px;
+    margin: 50px;
+  }
+  
+  .home-default-wrapper .view-buttons {
+    margin: 20px 0;
+  }
+  
+  .home-default-wrapper .button-link {
+    font-family: 'Glass Antiqua';
+    font-size: 28px;
+    background-color: #fcb7f9;
+    border: none;
+    padding: 20px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .home-default-wrapper .button-link:hover {
+    background-color: #c94acb;
+    color: white;
+  }
+  
+  .home-default-wrapper .notifications {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+  }
+  
+  .home-default-wrapper .text {
+    font-family: 'Beiruti';
+  }
+  
+  .home-default-wrapper .card {
+    background-color: #fceaff;
+    border: 5px solid #fcb7f9;
+    width: 530px;
+    border-radius: 12px;
+    text-align: left;
+  }
+  
+  .home-default-wrapper .card-bar {
+    background-color: #fcb7f9;
+    padding: 20px 0 30px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .home-default-wrapper .card-toggle {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fcb7f9;
+    transition: color 0.3s;
+  }
+  
+  .home-default-wrapper .card-toggle:hover {
+    color: #c94acb;
+  }
+  
+  .home-default-wrapper .card-content {
+    padding: 15px;
+  }
+  
+  .home-default-wrapper .card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .home-default-wrapper .event,
+  .home-default-wrapper .alert {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 16px 8px;
+    border-radius: 6px;
+  }
+  
+  .home-default-wrapper .event:hover,
+  .home-default-wrapper .alert:hover {
+    background-color: #c94acb;
+    color: white;
+    transition: background-color 0.2s, color 0.3s;
+  }
+  
+  /* List View */
+  .home-list-wrapper .main-content {
+    margin-left: 200px;
+    padding: 50px 40px;
+  }
+  
+  .home-list-wrapper .list-title {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .home-list-wrapper .location-list {
+    list-style: none;
+    padding: 0;
+    font-size: 28px;
+    line-height: 1.8;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .home-list-wrapper .location-list li {
+    background-color: #fcb7f9;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .home-list-wrapper .location-list li:hover {
+    background-color: #c94acb;
+    color: white;
+    transition: background-color 0.2s, color 0.3s;
+  }
+  
+  .home-list-wrapper .location-list li .event-list {
+    display: none;
+    margin-top: 8px;
+    font-size: 22px;
+    list-style: circle;
+    color: black;
+  }
+  
+  .home-list-wrapper .location-list li:hover .event-list {
+    display: block;
+  }
+  
+  .home-list-wrapper .location-list li .event-list li {
+    background-color: #fcb7f9;
+    color: black;
+  }
+  
+  .home-list-wrapper .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #fcb7f9;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.3s;
+  }
+  
+  .home-list-wrapper .back-button:hover {
+    background-color: #c94acb;
+    color: white;
+  }
+  
+  /* Map View */
+  .home-map-wrapper .top-bar {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .home-map-wrapper .search-box {
+    display: flex;
+  }
+  
+  .home-map-wrapper .search-box input {
+    padding: 10px;
+    font-size: 32px;
+    border-radius: 6px 0 0 6px;
+    border: 2px solid #fcb7f9;
+    background-color: #fff0fb;
+    color: black;
+    font-family: 'Glass Antiqua';
+  }
+  
+  .home-map-wrapper .search-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fcb7f9;
+    border-radius: 0 6px 6px 0;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: 'Glass Antiqua';
+    transition: background-color 0.2s, color 0.3s;
+  }
+  
+  .home-map-wrapper .search-box button:hover {
+    background-color: #c94acb;
+    color: white;
+  }
+  
+  .home-map-wrapper .filter-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fcb7f9;
+    border-radius: 6px;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: 'Glass Antiqua';
+    transition: background-color 0.2s, color 0.3s;
+  }
+  
+  .home-map-wrapper .filter-btn:hover {
+    background-color: #c94acb;
+    color: white;
+  }
+  
+  .home-map-wrapper .filter-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .home-map-wrapper .dropdown-content {
+    margin-top: -3px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff0fb;
+    border: 2px solid #fcb7f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 24px;
+    font-family: 'Glass Antiqua';
+  }
+  
+  .home-map-wrapper .dropdown-content label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .home-map-wrapper .filter-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .home-map-wrapper .map-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .home-map-wrapper .map {
+    width: 1600px;
+    border: 3px solid #fcb7f9;
+    border-radius: 10px;
+  }
+  
+  .home-map-wrapper .map-label {
+    position: absolute;
+    color: black;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .home-map-wrapper .marker {
+    position: absolute;
+    font-size: 60px;
+    color: #fcb7f9;
+    text-shadow: 1px 1px 3px black;
+    transition: color 0.3s;
+  }
+  
+  .home-map-wrapper .marker:hover {
+    color: #c94acb;
+  }
+  
+  .home-map-wrapper .marker-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-map-wrapper .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #c94acb;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 32px;
+    font-family: 'Glass Antiqua';
+    position: absolute;
+    top: -55px;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+    z-index: 1001;
+  }
+  
+  .home-map-wrapper .marker-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1; }
+
+    .home-map-wrapper .bottom-bar {
+        position: fixed;
+        bottom: 40px;
+        left: 250px;
+        right: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 1000;
+        }
+      
+    .home-map-wrapper .zoom-controls button,
+    .back-button {
+        padding: 10px 20px;
+        font-size: 32px;
+        border: none;
+        border-radius: 6px;
+        background-color: #fcb7f9;;
+        cursor: pointer;
+        margin: 0 5px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .home-map-wrapper .zoom-controls button {
+        font-family: 'Courier New', monospace;
+    }
+    
+    .home-map-wrapper .back-button:hover {
+        background-color: var(--accent-color);
+        color: white;
+        transition: background-color 0.2s, color 0.3s
+    }
+    
+    .home-map-wrapper .zoom-controls button:hover {
+        background-color: var(--accent-color);
+        color: white;
+        transition: background-color 0.2s, color 0.3s
+  }

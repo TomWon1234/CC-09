@@ -1,0 +1,10 @@
+.page-layout {
+    display: flex;
+  }
+  
+  .page-content {
+    margin-left: 120px;
+    padding: 40px;
+    flex-grow: 1;
+  }
+  

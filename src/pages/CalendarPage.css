@@ -1,0 +1,295 @@
+
+.calendar-default-wrapper body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+
+  .calendar-default-wrapper .h1 {
+    margin-bottom: 10px;
+  }
+
+  .calendar-default-wrapper .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .calendar-default-wrapper .card-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .calendar-default-wrapper .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+  .calendar-default-wrapper .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .calendar-default-wrapper .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .calendar-default-wrapper .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+
+  .calendar-default-wrapper .flip-card-front {
+    background-color: #fae6fa;
+    color: black;
+  }
+
+  .calendar-default-wrapper .flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .calendar-default-wrapper .front-display {
+    font-size: 2em;
+    padding-top: 20px;
+    color: black;
+  }
+
+  .calendar-default-wrapper .task {
+    background-color: #fae6fa;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: black;
+  }
+
+  .calendar-default-wrapper .flip-card p {
+    margin: 5px 0;
+  }
+
+  @media (max-width: 1100px) {
+    .card-row {
+      flex-wrap: wrap;
+    }
+  }
+
+  .calendar-default-wrapper .arrow {
+    cursor: pointer;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .calendar-default-wrapper.mySlides {
+    display: none;
+  }
+
+  .calendar-default-wrapper img {
+    vertical-align: middle;
+  }
+
+  .calendar-default-wrapper .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+  .calendar-default-wrapper .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .calendar-default-wrapper .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: 10px;
+  }
+
+  .calendar-default-wrapper .active {
+    background-color: #717171;
+  }
+
+  .calendar-default-wrapper .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  
+  .calendar-default-wrapper .icon-bar {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .calendar-default-wrapper .icon {
+    cursor: pointer;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .calendar-default-wrapper .icon:hover {
+    color: #007BFF;
+  }
+
+
+
+
+  
+  /* Form View */
+
+  .calendar-form-view * {
+    box-sizing: border-box;
+  }
+  
+  .calendar-form-view {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding-top: 100px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .calendar-form-view #regForm {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 40px;
+    width: 80%;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-form-view h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .calendar-form-view input,
+  .calendar-form-view textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: inherit;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .calendar-form-view input.invalid,
+  .calendar-form-view textarea.invalid {
+    background-color: #ffdddd;
+  }
+  
+  .calendar-form-view .tab {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .calendar-form-view .tab.active {
+    display: block;
+  }
+  
+  .calendar-form-view button {
+    background-color: #F3ECFF;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .calendar-form-view button:hover {
+    opacity: 0.8;
+  }
+  
+  .calendar-form-view #prevBtn {
+    background-color: #F3ECFF;
+  }
+  
+  .calendar-form-view .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .calendar-form-view .step.active {
+    opacity: 1;
+  }
+  
+  .calendar-form-view .step.finish {
+    background-color: #301934;
+  }
+  
+  .calendar-form-view label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+  }
+  
+  .calendar-form-view textarea {
+    font-family: inherit;
+    resize: vertical;
+  }
+  
+  .calendar-form-view .tab input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .calendar-form-view .calendar-form-view .tab .step-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  

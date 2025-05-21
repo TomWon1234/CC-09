@@ -1,0 +1,22 @@
+These are instructions to run the React high fidelity prototype locally. 
+
+
+1. Ensure node.js is installed with these commands, returning the version
+
+node v-
+
+npm v-
+
+2. Clone the right branch
+
+git clone -b localapp https://github.sydney.edu.au/ISYS2110-2025-S1/CC09-06.git
+
+3. Navigate the directory of the local repository
+
+cd <Where ever the repo is saved>
+
+4. Run the app, and enter the local host URL in a browser
+
+npm install
+
+npm run dev

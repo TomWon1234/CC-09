@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+.reporting-container h1 {
+    font-family: 'Glass Antiqua';
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+
+.reporting-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .reporting-container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .reporting-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .reporting-controls label {
+    font-weight: bold;
+  }
+  
+  .reporting-controls input,
+  .reporting-controls select {
+    padding: 6px 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+  }
+  
+  .reporting-controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #FD97FF;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .reporting-controls button:hover {
+    background-color: #e07cff;
+  }
+  
+  .report-chart {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .chart-placeholder {
+    width: 80%;
+    max-width: 600px;
+    border: 2px dashed #bbb;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  .report-table th,
+  .report-table td {
+    border: 1px white;
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .report-table th {
+    background-color: #fcb7f9;
+    font-weight: bold;
+  }
+
+  .filter-box {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #fcb7f9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .filter-box label {
+    margin-right: 4px;
+    font-weight: 500;
+  }
+  
+  .filter-box input,
+  .filter-box select,
+  .filter-box button {
+    margin-right: 12px;
+  }
+
+  .filter-box button {
+    padding: 8px 16px;
+    font-size: 12px;
+    background-color: #FD97FF;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .filter-box button:hover {
+    background-color: #e07cff;
+  }
+
+  .report-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .chart-placeholder {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background-color: #fbe1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-family: var(--font-family-glass-antiqua);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Top section */
+  .nav-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-top > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .user-name {
+    color: #000;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  /* Navigation list */
+  .nav-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    padding: 12px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    background-color: #e07cff;
+  }
+  
+  .nav-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+  }
+  
+  /* Bottom section */
+  .nav-bottom {
+    margin-bottom: 30px;
+  }
+  
+  .logout {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .logout-btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e07cff;
+  }
+  
+  .logout-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+
+  /*All Text */
+
+  .side-nav {
+    font-family: 'Glass Antiqua';
+    font-size: 25px;
+  }
+  
+  .side-nav .user-name {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  .side-nav .nav-list li,
+  .side-nav .logout li {
+    font-size: 25px;
+    font-family: 'Glass Antiqua';
+  }
+  
